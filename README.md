@@ -58,3 +58,10 @@ Please see Canvas for submission instructions specific to your cohort
 
 🧮 [Polya's 4 Step Approach to Problem Solving](http://web.mnstate.edu/peil/M110/Worksheet/PolyaProblemSolve.pdf)
 
+## note to self
+
+work flow to run the test:
+```sh 
+npm install
+npm run test:watch
+```

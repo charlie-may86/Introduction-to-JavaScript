@@ -12,12 +12,15 @@ returns a value, that value will be logged to the console.  An example of this w
 Task 1a - Voting Age
 
 Do the following:   
-   1. Create a variable called votingAge and assign it a value
-   2. Console log true if age is 18 or higher
+   1. Create a variable called votingAge and assign it a value check
+   2. Console log true if age is 18 or higher check
 
    HINT: no function required
 */
-
+let votingAge = 18
+if(votingAge >= 18) {
+  console.log(true)
+}
 
 
 /*
@@ -30,6 +33,14 @@ Do the following:
 
    HINT: no function required
 */
+
+let variableOne = 5
+let variableTwo = 6
+
+if (variableOne < variableTwo) {
+  variableOne = 'loser variable'
+  console.log(variableOne)
+}
 
 
 
@@ -58,10 +69,12 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+   return a * b
+
   }
 
+console.log(multiply(5,4))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -74,9 +87,13 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
+function dogYears(age){
     /*add your code here*/
+    return `Your dog is ${age * 7} in human years!`
+
 }
+
+console.log(dogYears(5))
 
 
 
@@ -107,10 +124,27 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
+function hungryDog(weight, age){
     /*add your code here*/
+    if(age >= 1 && weight <= 5){
+      return .05 * weight
+    } else if(age >= 1 && weight <= 10){
+      return .04 * weight
+    } else if(age >= 1 && weight <= 15){
+      return .03 * weight
+    } else if(age >= 1 && weight >15){
+      return .02 * weight
+    } else if(age <= (4/12)){
+      return .10 * weight
+    } else if(age <= (7/12)){
+      return .05 * weight
+    } else if(age < 1){
+      return .04 * weight
+    }
+
   }
 
+console.log(hungryDog(10, (11/12)))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -231,15 +265,15 @@ function foo(){
     //console.log('its working');
     return 'bar';
 }
-/*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-export default{
-    foo,
-    multiply,
-    dogYears,
-    hungryDog,
-    game,
-    miles,
-    feet,
-    annoyingSong,
-    grade
-}
+// /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
+// export default{
+//     foo,
+//     multiply,
+//     dogYears,
+//     hungryDog,
+//     game,
+//     miles,
+//     feet,
+//     annoyingSong,
+//     grade
+// }
