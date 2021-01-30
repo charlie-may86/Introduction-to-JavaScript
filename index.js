@@ -93,7 +93,7 @@ Do the following:
 
 function dogYears(age){
     /*add your code here*/
-    return `Your dog is ${age * 7} in human years!`
+    return age * 7
 
 }
 
