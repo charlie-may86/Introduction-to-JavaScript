@@ -56,7 +56,10 @@ Do the following:
 
    HINT: look up the Number method
 */
+let string = '1999'
+string = Number(string)
 
+console.log(string)
 
 
 
